@@ -1,7 +1,6 @@
 //javascript code
 
-var i;
-
+// var i;
 // function button1() {
 //     var myOutput = "";
 //     for (i = 1; i <= 26; i++){
@@ -18,20 +17,20 @@ var i;
 // }
 
 
-
+var i;
 function button1(){
     var myOutput = "";
     for (i = 1; i <= 26; i++){
-        document.getElementById('output1').innerHTML=myOutput;
+        document.getElementById('output1').innerHTML=myOutput;        
         myOutput+="<br>" + i;
     }
     setTimeout(function(){
-        if (i == 27){
+        if (i == 27){ 
             window.alert('Het getal 25 is net geen bullseye!');
             for (i = 27; i <= 51; i++) {
                 document.getElementById('output1').innerHTML=myOutput;
                 myOutput+="<br>" + i;
             }
         }
-    }, 1000)
+    }, 250)
 }
